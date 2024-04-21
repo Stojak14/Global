@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Global Rent a Car</title>
+</head>
+<body>
+    <nav class="navbar contanier">
+        <div class="navbar__img">
+           <a href="index.html"><img src="img/logo-black.svg" alt="Global Logo"></a> 
+        </div>
+        <div class="navbar__btn">
+            <a href="#contact">Kontaktirajte nas</a>
+        </div>
+    </nav>
+
+    <div class="global__single contanier">
+        <div class="global__single__img">
+            <img src="img/Audia6.jpg" alt="Audi A6 Allroad">
+        </div>
+        
+        <div class="global__single__text">
+            <h4>Audi A6 Allroad 3.0 - 2010.</h4>
+            <span>Od 27-40€/Dan</span>
+            <div class="global__signle__about">
+                <div>
+                    <p>Tip vozila: Karavan</p>
+                    <p>Menjač: Automatski</p>
+                    <p>Gorivo: Dizel</p>
+                    <p>Kubikaža: 2967 cm3</p>
+                </div>
+                <div>
+                    <p>Snaga: 176/293 (KW/KS)</p>
+                    <p>Potrošnja: 7l/100km</p>
+                    <p>Broj osoba: 5</p>
+                </div>
+            </div>
+            <button class="single__btn">Zakaži ponudu</button>
+        </div>
+    </div>
+
+    <!--Price section-->
+<section class="wrap">
+    <div class="price contanier">
+        <div class="price__table">
+        <table>
+            <tr>
+                <th >Broj dana</th>
+                <th class="brd">Cena po danu*</th>
+            </tr>
+            <tr>
+                <td>2-5</td>
+                <td class="brd">40€</td>
+            </tr>
+            <tr>
+                <td>6-10</td>
+                <td class="brd">35€</td>
+            </tr>
+            <tr>
+                <td>11-20</td>
+                <td class="brd">32€</td>
+            </tr>
+            <tr>
+                <td>21-30</td>
+                <td class="brd">30€</td>
+            </tr>
+            <tr>
+                <td>30+</td>
+                <td class="brd">27€</td>
+            </tr>
+        </table>
+        </div>
+        <div class="price__text">
+            <h4>Dodatne informacije</h4>
+            <hr>
+            <ul>
+                <li>Automobile izdajemo minimum dva dana</li>
+                <li>Bez depozita i dodatnih troškova!</li>
+                <li>Bez ogrančenja na kilometrazu!</li>
+                <li>00-24 podrška na putu!</li>
+                <li>Specijalna ponuda za najmove preko 30 dana</li>
+                <li>Besplatno je preuzimanje i vraćanje automobila na aerodromu</li>
+                <li>Besplatna dostava automobila na željenu adresu u krugu od 30km od aerodroma Nikola Tesla.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--Form Section-->
+<section class="form" id="contact">
+    <div class="global__form contanier">
+        <div class="form__title">
+            <h2>Jednostavni koraci za iznajmljivanje vozila</h2>
+            <p>Brza rezervacija, lako i pouzdano - zaključite svoje putovanje jednostavnim koracima</p>
+            </div>
+        <div class="global__form__about">
+            <form action="https://formspree.io/f/xdoqwqoz" method="POST" >
+                <div class="form__first">
+                    
+                        <div>
+                            <label for="Ime">Vaše ime:</label>
+                            <input type="text" name="Ime" required>
+                        </div>
+                        <div>
+                                <label for="Prezime">Vaše prezime:</label>
+                                <input type="text" name="Prezime" required>
+                        </div>
+                        <div>
+                            <label for="Email">Email adresa:</label>
+                            <input type="email" name="Email" required>
+                        </div>
+                        <div>
+                            <label for="Telefon">Broj telefona:</label>
+                            <input type="text" name="Telefon" required>
+                        </div>
+
+                </div>
+                <div class="form__second">
+                    <div>
+                        <label for="Datum_preuzimanja">Datum preuzimanja</label>
+                        <input type="date" name="Datum_preuzimanja" id="Datum_preuzimanja" required>
+                    </div>
+                    <div>
+                        <label for="Vreme_preuzimanja">Vreme preuzimanja</label>
+                        <input type="time" name="Vreme_preuzimanja" required>
+                    </div>
+                    <div>
+                        <label for="Datum_vracanja">Datum vraćanja</label>
+                        <input type="date" name="Datum_vracanja" required>
+                    </div>
+                    <div>
+                        <label for="Vreme_vracanja">Vreme vraćanja</label>
+                        <input type="time" name="Vreme_vracanja" id="Datum_vracanja" required>
+                    </div>
+                </div>
+                <div class="form__third">
+                    <div>
+                        <label for="Preuzimanje_lokacija">Preuzimanje vozila na lokaciji:</label>
+                        <input type="text" name="Preuzimanje_lokacija" required>
+                    </div>
+                    <div>
+                        <label for="Vozilo">Izaberite vozilo:</label>
+                        <select name="Vozilo" required>
+                            <option value="" disabled selected hidden></option>
+                            <option value="Peugeot 308 1.5">Peugeot 308 1.5 - 2014.</option>
+                            <option value="Insignia">Opel Insignia 2.0 - 2015.</option>
+                            <option value="Passat B8">VW Passat B8 2.0 - 2015.</option>
+                            <option value="Audi A6 Allroad">Audi A6 Allroad 3.0 - 2010.</option>
+                            <option value="Audi A6 2.7">Audi A6 2.7 - 2008.</option>
+                            <option value="Audi A4">Audi A4 2.0 - 2013.</option>
+                            <option value="Passat B6">VW Passat B6 - 2007.</option>
+                            <option value="Peugeot 308 1.6">Peugeot 308 1.6 - 2009.</option>
+                            <option value="Golf 5 Plus">VW Golf 5 Plus 1.9 - 2007.</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="submit__btn">
+                    <input type="submit" name="Poslato" class="Submit" value="Pošalji upit">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+<!--Form Section END-->
+
+<!-- Contact section-->
+<section class="global__contact global_bbg">
+    
+    <div class="global__contact__options contanier">
+        <a href="https://wa.me/+381659155829" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+        <a href="tel: +381659155829" target="_blank"><i class="fa-brands fa-viber"></i>Viber</a>
+        <a href="tel: +381659155829" target="_blank"><i class="fa-solid fa-phone"></i>Telefon</a>
+        <a href="https://www.instagram.com/globalrentacar_/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+    </div>
+</section>
+<!-- Contact section END-->
+   <!--Card slider Section-->
+   <section class="card__slider contanier">
+    <div class="card__slider__title">
+        <div><h3>Izbor vozila:</h3></div>
+        <div><i class="fa-solid fa-angle-left"></i> <i class="fa-solid fa-angle-right"></i></div>
+    </div>
+    <div class="card__slider__img">
+        <div class="card__slider__about">
+            <div><img src="img/peugeot3081.5.png" alt="Peugeot308"></div>
+            <h4>Peugeot 308 1.6 - 2014.</h4>
+            <p>Tip vozila: Hečbek</p>
+            <p>Menjač: Manuelni</p>
+            <p>Gorivo: Dizel</p>
+            <a href="Peugeot3081.5.html">Pročitajte više</a>
+        </div>
+        <div class="card__slider__about">
+            <div><img src="img/OpelInsignia.jpg" alt="Peugeot308"></div>
+            <h4>Opel Insignia 2.0 - 2015.</h4>
+            <p>Tip vozila: Karavan</p>
+            <p>Menjač: Automatski</p>
+            <p>Gorivo: Dizel</p>
+            <a href="insignia.html">Pročitajte više</a>
+        </div>
+        <div class="card__slider__about">
+            <div><img src="img/PassatB8.jpg" alt="Peugeot308"></div>
+            <h4>VW Passat B8 2.0 - 2015.</h4>
+            <p>Tip vozila: Karavan</p>
+            <p>Menjač: Automatski</p>
+            <p>Gorivo: Dizel</p>
+            <a href="passatB8.html">Pročitajte više</a>
+        </div>
+        <div class="card__slider__about">
+            <div><img src="img/Audia6.jpg" alt="Peugeot308"></div>
+            <h4>Audi A6 Allroad 3.0 - 2010.</h4>
+            <p>Tip vozila: Karavan</p>
+            <p>Menjač: Automatski</p>
+            <p>Gorivo: Dizel</p>
+            <a href="audiallroad.html">Pročitajte više</a>
+        </div>
+        <div class="card__slider__about">
+            <div><img src="img/Audia62.7.jpg" alt="Peugeot308"></div>
+            <h4>Audi A6 2.7 - 2008.</h4>
+            <p>Tip vozila: Karavan</p>
+            <p>Menjač: Automatski</p>
+            <p>Gorivo: Dizel</p>
+            <a href="audia6.html">Pročitajte više</a>
+        </div>
+        <div class="card__slider__about">
+            <div><img src="img/Audia4.jpg" alt="Peugeot308"></div>
+            <h4>Audi A4 2.0 - 2013.</h4>
+            <p>Tip vozila: Karavan</p>
+            <p>Menjač: Automatski</p>
+            <p>Gorivo: Dizel</p>
+            <a href="audia4.html">Pročitajte više</a>
+        </div>
+        <div class="card__slider__about">
+            <div><img src="img/WvPassatb6.jpg" alt="Peugeot308"></div>
+            <h4>VW Passat B6 - 2007.</h4>
+            <p>Tip vozila: Karavan/p>
+            <p>Menjač: Automatski</p>
+            <p>Gorivo: Dizel</p>
+            <a href="passatB6.html">Pročitajte više</a>
+        </div>
+        <div class="card__slider__about">
+            <div><img src="img/Peugeot3081.6.jpg" alt="Peugeot308"></div>
+            <h4>Peugeot 308 1.6 - 2009.</h4>
+            <p>Tip vozila: Karavan</p>
+            <p>Menjač: Manuelni</p>
+            <p>Gorivo: Dizel</p>
+            <a href="peugeot2009.html">Pročitajte više</a>
+        </div>
+        <div class="card__slider__about">
+            <div><img src="img/golf5.jpg" alt="Peugeot308"></div>
+            <h4>VW Golf 5 Plus 1.9 - 2007.</h4>
+            <p>Tip vozila: Hečbek</p>
+            <p>Menjač: Manuelni</p>
+            <p>Gorivo: Dizel</p>
+            <div class="mid">
+            <a href="golf5.html">Pročitajte više</a></div>
+        </div>
+    </div>
+</section>
+<!--Card slider Section END-->
+
+<!--Footer-->
+<footer class="global__footer footer__dif">
+    <div class="wrapper">
+        <div class="global__footer__icons">
+            <a href="index.html"><img src="img/logo-white.svg" alt="logo"></a>
+        </div>
+        <div class="global__footer__links">
+            <p><a href="cars.html" >Contact Us</a></p>
+            <p><a href="#">Terms & Conditions</a></p>
+            <p><a href="#">Privacy Policy</a></p>
+        </div>
+    </div>
+</footer>
+<!--Footer END-->
+<script src="script.js"></script>
+</body>
+</html>
